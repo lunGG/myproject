@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的购买清单</title>
+<link href="libs/public.css" rel="stylesheet" type="text/css">
+<link href="css/cart.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section id="header_top" class="clear">
+	<div class="container">
+		<ul class="left">
+			<li>
+				<i class="icons wx"></i>
+				<a href="#">微信查价</a>
+				<span></span>
+			</li>
+			<li>
+				<i class="icons sj"></i>
+				<a href="#">手机APP</a>
+			</li>
+		</ul>
+		<ul class="right">
+			<li>
+				<a href="#">网站导航</a>
+			</li>
+			<li>
+				<a href="#">客服中心</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<header class="clear">
+	<div class="container">
+		<div class="logo clear">
+			<a href="index.html"><img src="img/logo.jpg"/></a>
+			<span>购买清单</span>
+		</div>
+	</div>
+</header>
+<main>
+	<div class="container">
+		<h3>商品列表</h3>
+		<div class="goods_title">
+			<i class="icons i_all"></i>
+			<s>全选</s>
+			<b>商品信息</b>
+			<span>单价（元）</span>
+			<span>数量</span>
+			<span>小计（元）</span>
+			<span>操作</span>
+		</div>
+		<ul class="goods_list">
+			<!-- <li class="infor">
+				<i class="icons i1"></i>
+				<a href="detail.html" class="g_img"><img src="img/s_01.jpg"/></a>
+				<p>健力多 氨糖软骨素钙片(片剂)</p>
+				<s class="s1">￥</s>
+				<b class="each_1">30.00</b>
+				<a href="javascript:void(0)" class="reduce">-</a>
+				<input type="text" id="num" class="num" value="1" disabled/>
+				<a href="javascript:void(0)" class="increase">+</a>
+				<b class="total_1">￥30.00</b>
+				<span class="del">删除</span>
+			</li>			 -->
+		</ul>
+		<div class="account">
+			<a href="index.html"><<<我在逛逛</a>
+			<span>商品金额总计</span>
+			<!--<s>￥</s>-->
+			<b class="b_total">￥50</b>
+			<s>去结算</s>
+		</div>
+	</div>
+</main>
+<footer>
+	<p>
+		<a href="#">关于我们</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+	</p>
+	<p>
+		<span>互联网药品交易服务资格证编号:国A20110001</span>
+		<span>互联网药品信息服务资格证编号:(沪)-经营性-2012-0003</span>
+		<span>ICP备案号:沪ICP备07012885号</span>
+		<span>沪公网安备 31011502002155号</span>
+	</p>
+	<p>©2007-2019  药房网商城版权所有  上海伊邦医药信息科技有限公司</p>
+	<p>本网站用字经北京北大方正电子有限公司授权许可</p>
+</footer>
+</body>
+<script src="libs/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="libs/ajax.3.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/cookie.js"></script>
+<script src="js/cart.js"></script>
+<script type="text/javascript">
+	//	数量的增减
+	
+	var tNum = parseFloat($(".b_total").text().substr(1))
+	$(".infor").on("click",function(eve){
+		var e = eve || window.event;
+		var target = e.target || e.srcElement;
+		if(target.className == "increase"){
+			$(target).siblings("#num").val(function(){
+				return	parseInt($(this).val())+1;
+			})
+			$(target).siblings(".total_1").text(function(){
+				return "￥" + (parseFloat($(this).siblings(".each_1").text()) * ($(this).siblings("#num").val())).toFixed(2);
+				
+			})
+			tNum = tNum + parseFloat($(target).siblings(".each_1").text());
+			$(".b_total").text(function(){return "￥" + tNum});
+		}
+		if(target.className == "reduce"){
+			if(parseInt($(target).siblings("#num").val()) <= 1){
+				$(target).siblings("#num").val(function(){return 1;})
+			}else{
+				$(target).siblings("#num").val(function(){
+					return	parseInt($(this).val())-1;
+				})
+				tNum = tNum - parseFloat($(target).siblings(".each_1").text());
+			}
+			$(target).siblings(".total_1").text(function(){
+				return "￥" + (parseFloat($(this).siblings(".each_1").text()) * ($(this).siblings("#num").val())).toFixed(2);
+				
+			})
+			$(".b_total").text(function(){return "￥" + tNum});
+		}
+	})
+	
+	// $("#num").on("blur",function(){
+	// 	$(".total_1").text(function(){
+	// 		return "￥"+(parseFloat($(".each_1").text()) * parseInt($("#num").val())).toFixed(2);
+	// 	})
+	// 	$(".b_total").text($(".total_1").text());
+	// })
+//	删除按钮
+	$(".del").on("click",function(){
+		$(this).parent().remove();
+	})
+	
+//	选中按钮
+	$(".i_all").on("click",function(){
+		if($(this).css("background-position-x") == "-42px"){
+			$(this).css({"background-position-x":"-60px"});
+			$(".goods_list").find("i").css({"background-position-x":"-60px"});
+		}else{
+			$(this).css({"background-position-x":"-42px"});
+			$(".goods_list").find("i").css({"background-position-x":"-42px"});
+		}
+	})
+		$(".goods_list").on("click","i",function(){
+			if($(this).css("background-position-x") == "-42px"){
+				$(this).css({"background-position-x":"-60px"});
+			}else{
+				$(this).css({"background-position-x":"-42px"});
+			}
+	})
+</script>
+</html>

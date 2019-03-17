@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户注册</title>
+<link href="libs/public.css" rel="stylesheet" type="text/css">
+<link href="css/register.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section id="header_top" class="clear">
+	<div class="container">
+		<ul class="left">
+			<li>
+				<i class="icons wx"></i>
+				<a href="#">微信查价</a>
+				<span></span>
+			</li>
+			<li>
+				<i class="icons sj"></i>
+				<a href="#">手机APP</a>
+			</li>
+		</ul>
+		<ul class="right">
+			<li>
+				<a href="#">网站导航</a>
+			</li>
+			<li>
+				<a href="#">客服中心</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<header class="clear">
+	<div class="container">
+		<div class="logo clear">
+			<a href="index.html"><img src="img/logo.jpg"/></a>
+			<span>用户注册</span>
+		</div>
+	</div>
+</header>
+<main>
+	<div class="container">
+		<h3>个人用户</h3>
+		<dl class="required">
+			<dt>注册信息</dt>
+			<dd class="userName clear">
+				<s>用户名：</s>
+				<input type="text" id="uName" class="uName" value=""/>
+				<span style="display: none;">***请输入你的用户名，2-18个字符，只能字母、数字、中/下划线</span>
+			</dd>
+			<dd class="password clear">
+				<s>登录密码：</s>
+				<input type="password" name="pass1" id="pass1" class="pass1" value=""/>
+				<span></span>
+			</dd>
+			<dd class="confirm clear">
+				<s>确认密码：</s>
+				<input type="password" name="pass2" id="pass2" class="pass2"/>
+				<span></span>
+			</dd>
+			<dd class="phone_num clear">
+				<s>手机号码：</s>
+				<input type="text" id="phone_txt" class="phone_txt" value="" name="tel"/>
+				<span></span>
+			</dd>
+			<dd class="verification clear">
+				<s>验证码：</s>
+				<input type="text" id="ident" class="ident" value=""/>
+				<b class="code"></b>
+				<span></span>
+				<!--<span style="display: none;">***请输入4位验证码</span>-->
+			</dd>
+			<dd class="e-mail clear">
+				<s>邮箱：</s>
+				<input type="text" id="email" value=""/>
+				<span></span>
+				<!--<span style="display: none;">***请输入正确的邮箱地址</span>-->
+			</dd>
+		</dl>
+		<div class="agree">
+			<i class="icons"></i>
+			<b>我同意</b>
+			<a href="#">《药房网商城入驻用户服务协议》</a>
+		</div>
+		<div class="prompt">
+			<input type="submit" id="btn_Submit" class="btn_Submit" name="" value="立即注册"/>
+		</div>
+		<!--<dl class="optional">
+			<dt>个人信息</dt>
+			<dd></dd>
+		</dl>-->
+	</div>
+</main>
+<footer>
+	<p>
+		<a href="#">关于我们</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+		<span>|</span>
+		<a href="#">资质证明</a>
+		<span>|</span>
+		<a href="#">商家入驻</a>
+	</p>
+	<p>
+		<span>互联网药品交易服务资格证编号:国A20110001</span>
+		<span>互联网药品信息服务资格证编号:(沪)-经营性-2012-0003</span>
+		<span>ICP备案号:沪ICP备07012885号</span>
+		<span>沪公网安备 31011502002155号</span>
+	</p>
+	<p>©2007-2019  药房网商城版权所有  上海伊邦医药信息科技有限公司</p>
+	<p>本网站用字经北京北大方正电子有限公司授权许可</p>
+</footer>
+</body>
+<script src="libs/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="libs/ajax.3.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+	var ouser = document.getElementById("uName");
+    var opass = document.getElementById("pass1");
+    var opass2 = document.getElementById("pass2");
+    var ophone = document.getElementById("phone_txt");
+    var oident = document.getElementById("ident");
+    var oemail = document.getElementById("email");
+    var obtn = document.getElementById("btn_Submit");
+    var uonOff = ponOff = p2onOff = phonOff = ionOff = eonOff = conOff =  false;
+    var ocode = document.querySelector(".code");
+    
+    
+    ouser.onblur = function(){
+        var reg = /^[\u2E80-\u9FFF\w]{2,18}$/;
+        if(reg.test(this.value)){
+			this.nextElementSibling.style.display = "none";
+            uonOff = true;
+        }else{
+        	this.nextElementSibling.style.display = "block";
+            uonOff = false
+        }
+    }
+
+    opass.onblur = function(){
+        var a=b=c=0;
+        var numReg = /\d+/;
+        if(numReg.test(this.value)) a = 1;
+        var azReg = /[a-zA-Z]+/;
+        if(azReg.test(this.value)) b = 1;
+        var tsReg = /[\~\!\@\#\$\%\^\&\*\(\)\_\+\`\-\=\{\}\[\]\\|\;\'\:\"\,\.\/\<\>\?]+/;
+        if(tsReg.test(this.value)) c = 1;
+        ponOff = true;
+        switch(a+b+c){
+            case 1:
+            	this.nextElementSibling.innerHTML = "密码强度低";
+            	this.nextElementSibling.style.backgroundColor = "";
+            	break;
+            case 2:
+            	this.nextElementSibling.innerHTML = "密码强度中等";
+            	this.nextElementSibling.style.backgroundColor = "#0f0";
+            	break;
+            case 3:
+            	this.nextElementSibling.innerHTML = "密码强度高";
+            	this.nextElementSibling.style.backgroundColor = "#f00";
+            	break;
+            default:
+                this.nextElementSibling.innerHTML = "至少输入数字字母或特殊字符";
+                ponOff = false;
+        }
+        if(opass2.value === this.value && this.value != ""){
+            opass2.nextElementSibling.innerHTML = ""
+            p2onOff = true
+        }else{
+            opass2.nextElementSibling.innerHTML = "两次密码不一致"
+            p2onOff = false
+        }
+    }
+    opass2.onblur = function(){
+        if(opass.value === this.value && this.value != ""){
+            this.nextElementSibling.innerHTML = ""
+            p2onOff = true
+        }else{
+            this.nextElementSibling.innerHTML = "两次密码不一致"
+            p2onOff = false
+        }
+    }
+	ophone.onblur = function(){
+		var reg = /^1[3-9]\d{9}$/;
+        if(reg.test(this.value)){
+            this.nextElementSibling.innerHTML = ""
+            phonOff = true
+        }else{
+            this.nextElementSibling.innerHTML = "***请输入您的手机号码，11位数字"
+            phonOff = false
+        }		
+	}
+	ocode.innerHTML = getRandom();
+	oident.onblur = function(){
+		if(this.value == ocode.innerText){
+			this.nextElementSibling.nextElementSibling.innerHTML = "验证成功"
+			ionOff = true;
+		}else{
+			this.nextElementSibling.nextElementSibling.innerHTML = "验证失败"
+			ionOff = false;
+		}
+	}
+    oemail.onblur = function(){
+        var reg = /^[\w-]{3,12}@[0-9a-z]{2,9}\.[a-z]{2,5}$/;
+        if(reg.test(this.value)){
+            this.nextElementSibling.innerHTML = ""
+            eonOff = true
+        }else{
+            this.nextElementSibling.innerHTML = "不符合邮箱格式"
+            eonOff = false
+        }
+    }
+    var ochecked = document.querySelector(".agree").children[0];
+    ochecked.onclick = function(){
+    	if(this.style.backgroundPositionX == "-41px"){
+    		this.style.backgroundPositionX = "-60px";
+    		conOff = true;
+    	}else{
+    		this.style.backgroundPositionX = "-41px";
+    		conOff = false;
+    	}
+    }
+//  obtn.onclick = function(){
+//      if(uonOff && ponOff && p2onOff && phonOff && ionOff && eonOff && conOff){
+//          alert("注册成功")
+//      }else{
+//          alert("注册失败")
+//      }
+//  }
+	function getRandom(){
+			var num1 = Math.round(Math.random() * 9)
+			var num2 = Math.round(Math.random() * 9)
+			var num3 = Math.round(Math.random() * 9)
+			var num4 = Math.round(Math.random() * 9)
+			
+			return ""+num1+num2+num3+num4
+	}
+//	注册按钮
+    function Register(options){
+    	this.btn = options.btn;
+    	this.user = options.user;
+    	this.pass = options.pass;
+    	this.url = options.url;
+    	this.init();
+    }
+    Register.prototype.init = function(){
+    	var that = this;
+    	this.btn.onclick = function(){
+    		if(uonOff && ponOff && p2onOff && phonOff && ionOff && eonOff && conOff){
+    			that.load()
+    		}else{
+    			alert("请输入完整的信息")
+    		}
+    	}
+    }
+    Register.prototype.load = function(){
+    	var that = this;
+    	$.ajax({
+			type: "POST",
+			url: that.url,
+			data: {username:$("#uName").val(), password:$("#pass1").val()},
+			dataType: "json",
+			success: function(res){
+				if(res.error == 0){
+					console.log(res);
+					// location.href = "login.html";
+				}else{
+					alert(res.msg);
+				}
+			}
+		});
+    }
+	new Register({
+		btn:document.getElementById("btn_Submit"),
+		user:document.getElementById("uName"),
+		pass:document.getElementById("pass1"),
+		url:"/api/reg"
+	})
+</script>
+</html>

@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+.icons{background: url(../img/icons.png);}
+#header_top{background: #f4f4f4;border-bottom: 1px solid #e5e5e5;}
+#header_top .container{width: 990px;margin: 0 auto;}
+#header_top .container .left{float: left;}
+#header_top .container .left li{float: left;}
+#header_top .container .left li i{width: 20px;height: 20px;display: block;float: left;margin: 10px 5px 10px 0;}
+#header_top .container .left li i.wx{background-position: -49px -3px;}
+#header_top .container .left li i.sj{background-position: -68px -3px;}
+#header_top .container .left li a{display: block;float: left;height: 40px;line-height: 40px;}
+#header_top .container .left li span{display: block;float: left;width: 1px;height: 20px;background: #e5e5e5;margin: 10px;}
+#header_top .container .right{float: right;}
+#header_top .container .right li{float: right;}
+#header_top .container .right li a{font: 12px/40px "";margin-left: 40px;}
+
+header{}
+header .container{width: 990px;height: 120px;margin: 0 auto;}
+header .container .logo{margin: 23px 0 0 5px;}
+header .container .logo a{display: block;width: 210px;height: 70px;float: left;}
+header .container .logo a img{width: 210px;height: 70px;}
+header .container .logo span{color:#666;font:700 24px/55px "";display: block;float: left;margin: 10px;border-left: 1px solid #e5e5e5;padding-left: 20px;}
+
+main{}
+main .container{width: 1100px;margin: 0 auto;position: relative;margin-bottom: 100px;}
+main h3{background: #0cb95f;color: #fff;text-align: center;font: 14px/50px "";width: 100px;}
+main .goods_title{position: relative;border: 1px solid #999;font: 14px/50px "";height: 50px;margin-top: 10px;}
+main .goods_title i{position: absolute;background-position: -42px -25px;width: 16px;height: 16px;top: 17px;left: 10px;}
+main .goods_title s{position: absolute;left: 30px;}
+main .goods_title b{position: absolute;left:100px}
+main .goods_title span:nth-child(4){position: absolute;right: 380px;top: 0;}
+main .goods_title span:nth-child(5){position: absolute;right: 300px;top: 0;}
+main .goods_title span:nth-child(6){position: absolute;right: 150px;top: 0;}
+main .goods_title span:nth-child(7){position: absolute;right: 50px;top: 0;}
+
+main .goods_list{}
+main .goods_list .infor{position: relative;height: 100px;border: 1px solid #999;margin-top: 10px;}
+main .goods_list .infor i{position: absolute;left: 10px;background-position: -42px -25px;width: 16px;height: 16px;top: 40px;}
+main .goods_list .infor a.g_img{position: absolute;left: 40px;top: 15px;width: 70px;height: 70px;border: 1px solid #999;}
+main .goods_list .infor a.g_img img{width: 70px;height: 70px;}
+main .goods_list .infor p{position: absolute;left: 120px;top: 40px;}
+main .goods_list .infor s.s1{position: absolute;right: 430px;top: 40px;}
+main .goods_list .infor b.each_1{position: absolute;right: 400px;top: 40px;}
+main .goods_list .infor a.reduce{position: absolute;text-align:center;line-height:20px;width: 24px;height: 20px;border: 1px solid #e5e5e5;right: 329px;top: 40px;}
+main .goods_list .infor .num{position: absolute;width: 20px;line-height:20px;padding: 0 10px;right: 287px;top: 40px;border: 1px solid #999;}
+main .goods_list .infor a.increase{position: absolute;text-align:center;line-height:20px;width: 24px;height: 20px;border: 1px solid #e5e5e5;right: 261px;top: 40px;}
+/*main .goods_list li .infor s.s2{position: absolute;right: 200px;top: 40px;color: red;}*/
+main .goods_list .infor b.total_1{position: absolute;right: 170px;top: 40px;color: red;}
+main .goods_list .infor span{position: absolute;right: 50px;top: 40px;cursor: pointer;}
+
+/*main .goods_list li .total{position: relative;height: 50px;border: 1px solid #999;border-top: 0;}
+main .goods_list li .total span{position: absolute;right: 150px;top: 20px;}
+main .goods_list li .total s{position: absolute;right: 80px;top: 20px;color: red;}
+main .goods_list li .total b{position: absolute;right: 50px;top: 20px;color: red;}*/
+
+main .account{position: relative;height: 50px;border: 1px solid #999;margin-top: 10px;font: 14px/50px "";}
+main .account span{position: absolute;right: 250px;}
+main .account a{margin-left: 30px;color: red}
+main .account b{position: absolute;right: 150px;color: red;font: 700 18px/50px "";}
+main .account s{position: absolute;right: 50px;background: #0CB95F;color: #fff;padding: 0 20px;height: 45px;top: 2px;}
+
+
+footer{height: 130px;background: #fff;text-align: center;color: #999;;}
+footer p{margin: 15px 0;}
+footer p a{color: #999;}
+footer p a:hover{color: #0cb95f;}

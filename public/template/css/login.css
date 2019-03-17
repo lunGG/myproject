@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+.icons{background: url(../img/icons.png);}
+#header_top{background: #f4f4f4;border-bottom: 1px solid #e5e5e5;}
+#header_top .container{width: 990px;margin: 0 auto;}
+#header_top .container .left{float: left;}
+#header_top .container .left li{float: left;}
+#header_top .container .left li i{width: 20px;height: 20px;display: block;float: left;margin: 10px 5px 10px 0;}
+#header_top .container .left li i.wx{background-position: -49px -3px;}
+#header_top .container .left li i.sj{background-position: -68px -3px;}
+#header_top .container .left li a{display: block;float: left;height: 40px;line-height: 40px;}
+#header_top .container .left li span{display: block;float: left;width: 1px;height: 20px;background: #e5e5e5;margin: 10px;}
+#header_top .container .right{float: right;}
+#header_top .container .right li{float: right;}
+#header_top .container .right li a{font: 12px/40px "";margin-left: 40px;}
+
+header{}
+header .container{width: 990px;height: 120px;margin: 0 auto;}
+header .container .logo{margin: 23px 0 0 5px;}
+header .container .logo a{display: block;width: 210px;height: 70px;float: left;}
+header .container .logo a img{width: 210px;height: 70px;}
+header .container .logo span{color:#666;font:700 24px/55px "";display: block;float: left;margin: 10px;border-left: 1px solid #e5e5e5;padding-left: 20px;}
+
+main{background: url(../img/login.png) no-repeat center;height: 540px;}
+main .container{width: 1100px;height:540px;margin: 0 auto;position: relative;}
+main .container .account{position: absolute;top: 50px;right: 40px;width: 320px;background: #fff;padding: 10px 40px;}
+main .container .select{}
+main .container .select .sleft{float:left;font: 700 20px/50px "";color: #999;width: 150px;text-align: center;cursor: pointer;}
+main .container .select span{display:block;float:left;width: 1px;height: 18px;margin-top: 18px;background: #eef1f5;}
+main .container .select .sright{float:left;font: 700 20px/50px "";color: #999;width: 150px;text-align: center;cursor: pointer;}
+main .container .register{}
+main .container .register .rleft{float: left;font: 16px/50px "";}
+main .container .register .rright{float: right;font: 16px/50px "";}
+main .container .register .rright s{}
+main .container .register .rright a{color: #0cb95f;}
+main .container .account .number{position: relative;}
+main .container .account .number .uName{height: 42px;width: 100%;margin-bottom: 10px;padding: 0 20px 0 35px;box-sizing: border-box;}
+main .container .account .number i{background-position: -351px -109px;position: absolute;width: 18px;height: 25px;top: 8px;left: 10px;}
+main .container .account .password{position: relative;}
+main .container .account .password .pass{height: 42px;width: 100%;margin-bottom: 10px;padding: 0 20px 0 35px;box-sizing: border-box;}
+main .container .account .password i{background-position: -371px -109px;width: 18px;height: 25px;position: absolute;top: 8px;left: 10px;}
+main .container .account .remember{height: 50px;}
+main .container .account .remember .mleft{float:left;font: 14px/50px "";}
+main .container .account .remember .mleft i{background-position: -41px -25px;display: inline-block;vertical-align:middle;width: 16px;height: 16px;}
+main .container .account .remember .mright{float: right;}
+main .container .account .remember .mright a{font: 14px/50px "";}
+main .container .account .remember .mright a:hover{color: #0cb95f;}
+main .container .entry{}
+main .container .entry .btn_Submit{font: 18px/48px "";color: #fff;background: #0cb95f;border: 0;width: 100%;cursor: pointer;}
+main .container .way{line-height: 50px;}
+main .container .diverse{margin-bottom: 20px;}
+main .container .diverse a{display:block;width: 30px;height: 30px;margin-right: 20px;float: left;}
+main .container .diverse a.qq{background-position: -416px -142px;}
+main .container .diverse a.wx{background-position: -448px -142px;}
+main .container .diverse a.zfb{background-position: -416px -174px}
+main .container .diverse a.wb{background-position: -448px -174px;}
+
+/*main .container .shortcut{position: absolute;top: 50px;right: 40px;width: 320px;background: #fff;padding: 10px 40px;}*/
+
+main .container .phone .phone_txt{height: 42px;width: 100%;margin-bottom: 10px;padding: 0 20px 0 15px;box-sizing: border-box;}
+main .container .picture{position: relative;}
+main .container .picture .picture_txt{height: 42px;width: 100%;margin-bottom: 10px;padding: 0 20px 0 15px;box-sizing: border-box;}
+main .container .picture i.piccode{}
+main .container .message{position: relative;}
+main .container .message .message_txt{height: 42px;width: 100%;margin-bottom: 10px;padding: 0 20px 0 15px;box-sizing: border-box;}
+main .container .message i.mescode{}
+
+
+footer{height: 130px;background: #fff;text-align: center;color: #999;;}
+footer p{margin: 15px 0;}
+footer p a{color: #999;}
+footer p a:hover{color: #0cb95f;}

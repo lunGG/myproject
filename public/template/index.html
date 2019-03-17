@@ -1,0 +1,2154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>药房网商城</title>
+<link href="libs/public.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section id="header_top" class="clear">
+	<div class="margin">
+		<ul class="left clear">
+			<li class="col clear">
+				<i class="icons fav"></i>
+				<a href="#" title="收藏药房网商城，下次访问更便捷">收藏药房网商城</a>
+				<span></span>
+			</li>
+			<li class="weixin clear">
+				<i class="icons wx"></i>
+				<a href="#" title="关注药房网商城微信公众账号，随时随地查药价">微信查价</a>
+				<span></span>
+			</li>
+			<li class="app clear">
+				<i class="icons aa"></i>
+				<a href="#" title="下载药房网商城APP">手机APP</a>
+			</li>
+		</ul>
+		<ul class="right clear">
+			<li class="ent_btn">
+				<a href="#">商家入驻</a>
+			</li>
+			<li class="web_nav">
+				<a href="#">网站导航</a>
+				<i class="icons"></i>
+			</li>
+			<li class="customer">
+				<a href="#">客服中心</a>
+			</li>
+			<li class="fav clear">
+				<a href="#">收藏夹</a>
+				<span></span>
+			<li class="person clear">
+				<a href="#">个人中心</a>
+				<i class="icons"></i>
+				<span></span>
+			</li>
+			<li class="cart clear">
+				<i class="icons"></i>
+				<a href="#">需求单（<label id="cartNum">0</label>）</a>
+			</li>
+			<li class="login">您好：
+				<a href="javascript:void(0)" class="uName"></a>
+				<a href="javascript:void(0)" class="logout">[登录]</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<header class="clear">
+	<div class="margin">
+		<div class="logo">
+			<a href="#" title="药房网商城(网上药店)">
+				<img src="img/logo.jpg" alt="药房网商城是专业网上药店(网上药房),经国家药监局认证合法医药网，药品网购就到药房网商城!"/>
+			</a>
+		</div>
+		<div class="search">
+			<form>
+				<ul class="opt_list">
+					<li class="current"><a href="#">商品</a><i class="icons"></i></li>
+					<li><a href="#">商家</a></li>
+					<li><a href="#">厂家</a></li>
+					<li><a href="#">医院</a></li>
+				</ul>
+				<input type="text" id="txt" value="" class="txt" placeholder="请输入批准文号、通用名、商品名、症状"/>
+				<input type="button" name="btn" id="btn" value="搜索" class="btn"/>
+			</form>
+			<ul class="hot_search">
+				<li class="noborder hightlight"><a href="#">补血</a></li>
+				<li><a href="#" title="999">999</a></li>
+				<li><a href="#" title="片仔癀">片仔癀</a></li>
+				<li><a href="#" title="妈富隆">妈富隆</a></li>
+				<li class="hightlight"><a href="#" title="阿胶">阿胶</a></li>
+				<li><a href="#" title="金戈">金戈</a></li>
+				<li><a href="#" title="汤臣倍健">汤臣倍健</a></li>
+			</ul>
+		</div>
+		<div class="promise">
+			<a href="#" title="第三方药品交易服务平台,一站多店式药品订购体验,严格审核正规药房供货" class="icons"></a>
+		</div>
+	</div>
+</header>
+<nav>
+	<div class="margin">
+		<ul class="mainnav clear">
+			<li class="category"><a href="#">全部商品分类</a></li>
+			<li class="home"><a href="#">首页</a></li>
+			<li><a href="#" title="药品超市">药品超市</a></li>
+			<li><a href="#" title="药房联盟">药房联盟</a></li>
+			<li><a href="#" title="医院大全">医院大全</a></li>
+			<li><a href="#" title="医药资讯">医药资讯</a></li>
+			<li><a href="#" title="健康问答">健康问答</a></li>
+		</ul>
+		<div class="goodlists">
+			<ul class="maingoods" style="opacity: 0.9;">
+				<li id="zxyp">
+					<i class="icons"></i>
+					<h2>
+						<a href="#" title="中西药品">中西药品</a>
+					</h2>
+					<div class="sub clear">
+						<a href="#" title="肠胃用药">肠胃用药</a>
+						<a href="#" title="感冒药">感冒药</a>
+						<a href="#" title="心脑血管">心脑血管</a>
+					</div>
+				</li>
+				<li id="ylqc">
+					<i class="icons"></i>
+					<h2>
+						<a href="#" title="医疗器材">医疗器材</a>
+					</h2>
+					<div class="sub clear">
+						<a href="#" title="血压计">血压计</a>
+						<a href="#" title="血糖仪">血糖仪</a>
+						<a href="#" title="创可贴">创可贴</a>
+					</div>
+				</li>
+				<li id="ysbj">
+					<i class="icons"></i>
+					<h2>
+						<a href="#" title="养生保健">养生保健</a>
+					</h2>
+					<div class="sub clear">
+						<a href="#" title="滋补药酒">滋补药酒</a>
+						<a href="#" title="补钙">补钙</a>
+						<a href="#" title="补气养血">补气养血</a>
+					</div>
+				</li>
+				<li id="jsyp">
+					<i class="icons"></i>
+					<h2>
+						<a href="#" title="计生用品">计生用品</a>
+					</h2>
+					<div class="sub clear">
+						<a href="#" title="避孕套">避孕套</a>
+						<a href="#" title="避孕药">避孕药</a>
+						<a href="#" title="验孕检查">验孕检查</a>
+					</div>
+				</li>
+				<li id="zyyp">
+					<i class="icons"></i>
+					<h2>
+						<a href="#" title="中药饮品">中药饮品</a>
+					</h2>
+					<div class="sub clear">
+						<a href="#" title="西洋参">西洋参</a>
+						<a href="#" title="三七">三七</a>
+						<a href="#" title="灵芝孢子粉">灵芝孢子粉</a>
+					</div>
+				</li>
+				<li id="mrhf">
+					<i class="icons"></i>
+					<h2>
+						<a href="#" title="美容护肤">美容护肤</a>
+					</h2>
+					<div class="sub clear">
+						<a href="#" title="祛痘">祛痘</a>
+						<a href="#" title="祛斑">祛斑</a>
+						<a href="#" title="疤痕修复">疤痕修复</a>
+					</div>
+				</li>
+			</ul>
+			<div class="subcat clear" style="display: none;">
+				<ul class="sitems">
+					<li>
+						<a class="bit" href="#" target="_blank" title="胃肠用药">胃肠用药
+							<label>
+								<i class="icons"></i>
+							</label>
+						</a>
+						<a href="#" title="胃炎">胃炎</a>
+						<a href="#" title="胃溃疡">胃溃疡</a>
+						<a href="#" title="急性肠炎">急性肠炎</a>
+						<a href="#" title="十二指肠溃疡">十二指肠溃疡</a>
+						<a href="#" title="胆囊炎">胆囊炎</a>
+						<a href="#" title="便秘">便秘</a>
+						<a href="#" title="消化不良">消化不良</a>
+						<a href="#" title="痔疮">痔疮</a>
+						<a href="#" title="腹痛腹泻">腹痛腹泻</a>
+					</li>
+					<li>
+						<a class="bit" href="#" target="_blank" title="呼吸系统">呼吸系统
+							<label>
+								<i class="icons"></i>
+							</label>
+						</a>
+						<a href="#" title="支气管炎">支气管炎</a>
+						<a href="#" title="肺热咳嗽">肺热咳嗽</a>
+						<a href="#" title="哮喘">哮喘</a>
+						<a href="#" title="气管炎">气管炎</a>
+						<a href="#" title="肺结核">肺结核</a>
+					</li>
+					<li>
+						<a class="bit" href="#" target="_blank" title="心脑血管">心脑血管
+							<label>
+								<i class="icons"></i>
+							</label>
+						</a>
+						<a href="#" title="高血压">高血压</a>
+						<a href="#" title="糖尿病">糖尿病</a>
+						<a href="#" title="冠心病">冠心病</a>
+						<a href="#" title="高血脂">高血脂</a>
+						<a href="#" title="心肌炎">心肌炎</a>
+						<a href="#" title="脑血栓">脑血栓</a>
+						<a href="#" title="中风偏瘫">中风偏瘫</a>
+						<a href="#" title="低血压">低血压</a>
+						<a href="#" title="静脉曲张">静脉曲张</a>
+						<a href="#" title="动脉硬化">动脉硬化</a>
+					</li>
+					<li>
+                        <a class="bit" href="#" target="_blank" title="风湿骨科">风湿骨科
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                        <a sortno="1" href="#" title="风湿病">风湿病</a>
+                        <a sortno="2" href="#" title="跌打损伤">跌打损伤</a>
+                        <a sortno="3" href="#" title="关节炎">关节炎</a>
+                        <a sortno="4" href="#" title="颈椎病">颈椎病</a>
+                        <a sortno="5" href="#" title="骨质疏松">骨质疏松</a>
+                        <a sortno="6" href="#" title="痛风">痛风</a>
+                        <a sortno="7" href="#" title="坐骨神经痛">坐骨神经痛</a>
+                        <a sortno="8" href="#" title="腰肌劳损">腰肌劳损</a>
+                        <a sortno="9" href="#" title="肩周炎">肩周炎</a>
+                        <a sortno="10" href="#" title="腰椎间盘突出">腰椎间盘突出</a>
+                    </li>
+					<li>
+                        <a class="bit" href="#" target="_blank" title="抗肿瘤药">抗肿瘤药
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                        <a sortno="2" href="#" title="白血病">白血病</a>
+                        <a sortno="3" href="#" title="肺癌">肺癌</a>
+                        <a sortno="4" href="#" title="胃癌">胃癌</a>
+                        <a sortno="5" href="#" title="肝癌">肝癌</a>
+                        <a sortno="6" href="#" title="肾癌">肾癌</a>
+                        <a sortno="7" href="#" title="乳腺癌">乳腺癌</a>
+                        <a sortno="8" href="#" title="卵巢癌">卵巢癌</a>
+                        <a sortno="9" href="#" title="食道癌">食道癌</a>
+                        <a sortno="10" href="#" title="鼻咽癌">鼻咽癌</a>
+                        <a sortno="11" href="#" title="胰腺癌">胰腺癌</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="皮肤科药">皮肤科药
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                        <a sortno="1" href="#" title="皮炎">皮炎</a>
+                        <a sortno="2" href="#" title="湿疹">湿疹</a>
+                        <a sortno="3" href="#" title="痤疮">痤疮</a>
+                        <a sortno="4" href="#" title="疥疮">疥疮</a>
+                        <a sortno="5" href="#" title="疱疹">疱疹</a>
+                        <a sortno="6" href="#" title="皮肤过敏">皮肤过敏</a>
+                        <a sortno="7" href="#" title="蚊虫叮咬">蚊虫叮咬</a>
+                        <a sortno="8" href="#" title="乌发生发">乌发生发</a>
+                        <a sortno="9" href="#" title="白癜风">白癜风</a>
+                        <a sortno="10" href="#" title="尖锐湿疣">尖锐湿疣</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="五官科药">五官科药
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                        <a sortno="1" href="#" title="眼科">眼科</a>
+                        <a sortno="2" href="#" title="鼻科">鼻科</a>
+                        <a sortno="3" href="#" title="耳科">耳科</a>
+                        <a sortno="4" href="#" title="口腔科">口腔科</a>
+                        <a sortno="5" href="#" title="喉科">喉科</a>
+                    </li>
+             	    <li class="last">
+	                    <a class="bit2" href="#" target="_blank">查看更多
+	                    	<label>
+	                    		<i class="icons"></i>
+	                    	</label>
+	                    </a>&nbsp;
+	                </li>
+				</ul>
+				<div class="rmpp"></div>
+			</div>
+			<div class="subcat clear" style="display: none;">
+				<ul class="sitems">
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="家庭常备">家庭常备
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="棉签">棉签</a>
+                            <a sortno="2" href="#" title="纱布">纱布</a>
+                            <a sortno="3" href="#" title="胶布">胶布</a>
+                            <a sortno="4" href="#" title="绷带">绷带</a>
+                            <a sortno="5" href="#" title="创口贴">创口贴</a>
+                            <a sortno="8" href="#" title="消毒">消毒</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="检测设备">检测设备
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="血压检测">血压检测</a>
+                            <a sortno="2" href="#" title="血糖检测">血糖检测</a>
+                            <a sortno="3" href="#" title="体温检测">体温检测</a>
+                            <a sortno="4" href="#" title="听诊器">听诊器</a>
+                            <a sortno="5" href="#" title="体重脂肪测量仪">体重脂肪测量仪</a>
+                            <a sortno="6" href="#" title="CFMS血小板聚集功能检测试剂盒">CFMS血小板聚集功能检测试剂盒</a>
+                            <a sortno="7" href="#" title="免疫缺陷病毒抗体">免疫缺陷病毒抗体</a>
+                            <a sortno="8" href="#" title="标准对数视力表灯">标准对数视力表灯</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="助行器械">助行器械
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="轮椅">轮椅</a>
+                            <a sortno="2" href="#" title="拐杖">拐杖</a>
+                            <a sortno="5" href="#" title="助行器">助行器</a>
+                            <a sortno="6" href="#" title="接尿器">接尿器</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="康复理疗">康复理疗
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="红外理疗">红外理疗</a>
+                            <a sortno="2" href="#" title="按摩系列">按摩系列</a>
+                            <a sortno="3" href="#" title="治疗仪器">治疗仪器</a>
+                            <a sortno="4" href="#" title="足浴理疗">足浴理疗</a>
+                            <a sortno="5" href="#" title="助听器">助听器</a>
+                            <a sortno="6" href="#" title="疝气治疗">疝气治疗</a>
+                            <a sortno="7" href="#" title="矫姿">矫姿</a>
+                            <a sortno="9" href="#" title="频谱理疗">频谱理疗</a>
+                            <a sortno="10" href="#" title="磁场理疗">磁场理疗</a>
+                            <a sortno="11" href="#" title="鼻腔护理">鼻腔护理</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="中医器械">中医器械
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="针灸">针灸</a>
+                            <a sortno="2" href="#" title="拔罐">拔罐</a>
+                            <a sortno="3" href="#" title="刮痧">刮痧</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="供氧器械">供氧器械
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="制氧设备">制氧设备</a>
+                            <a sortno="3" href="#" title="供氧辅助器械">供氧辅助器械</a>
+                            <a sortno="4" href="#" title="氧气袋">氧气袋</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="外用贴膏">外用贴膏
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="降温退烧">降温退烧</a>
+                            <a sortno="2" href="#" title="风湿骨痛">风湿骨痛</a>
+                            <a sortno="3" href="#" title="妇科外用">妇科外用</a>
+                            <a sortno="4" href="#" title="五官外用">五官外用</a>
+                            <a sortno="5" href="#" title="跌打损伤">跌打损伤</a>
+                            <a sortno="6" href="#" title="晕车贴">晕车贴</a>
+                            <a sortno="7" href="#" title="医用敷料">医用敷料</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="隐形眼镜">隐形眼镜
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="隐形眼镜">隐形眼镜</a>
+                            <a sortno="2" href="#" title="美瞳彩片">美瞳彩片</a>
+                            <a sortno="3" href="#" title="周边护理">周边护理</a>
+                    </li>
+                <li class="last">
+                    <a class="bit2" href="#" target="_blank">查看更多
+                    	<label>
+                    		<i class="icons"></i>
+                    	</label>
+                    </a>&nbsp;
+                </li>
+            </ul>
+				<div class="rmpp"></div>
+			</div>
+			<div class="subcat clear" style="display: none;">
+				<ul class="sitems">
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="大众养生">大众养生
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="滋补药酒">滋补药酒</a>
+                            <a sortno="2" href="#" title="增强免疫">增强免疫</a>
+                            <a sortno="3" href="#" title="补矿物质">补矿物质</a>
+                            <a sortno="4" href="#" title="补维生素">补维生素</a>
+                            <a sortno="5" href="#" title="改善睡眠">改善睡眠</a>
+                            <a sortno="6" href="#" title="调节肠胃">调节肠胃</a>
+                            <a sortno="7" href="#" title="缓解疲劳">缓解疲劳</a>
+                            <a sortno="8" href="#" title="清咽润喉">清咽润喉</a>
+                            <a sortno="9" href="#" title="保护视力">保护视力</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="男性保健">男性保健
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="补肾壮阳">补肾壮阳</a>
+                            <a sortno="2" href="#" title="养肝护肝">养肝护肝</a>
+                            <a sortno="4" href="#" title="补充体力">补充体力</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="女性保健">女性保健
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="2" href="#" title="美容养颜">美容养颜</a>
+                            <a sortno="3" href="#" title="减肥瘦身">减肥瘦身</a>
+                            <a sortno="4" href="#" title="调内分泌">调内分泌</a>
+                            <a sortno="5" href="#" title="补气养血">补气养血</a>
+                            <a sortno="6" href="#" title="丰胸美体">丰胸美体</a>
+                            <a sortno="7" href="#" title="产前产后">产前产后</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="中老年保健">中老年保健
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="调节血脂">调节血脂</a>
+                            <a sortno="2" href="#" title="调节血压">调节血压</a>
+                            <a sortno="3" href="#" title="调节血糖">调节血糖</a>
+                            <a sortno="4" href="#" title="增强免疫">增强免疫</a>
+                            <a sortno="5" href="#" title="骨质疏松">骨质疏松</a>
+                            <a sortno="6" href="#" title="润肠通便">润肠通便</a>
+                            <a sortno="7" href="#" title="强身健体">强身健体</a>
+                            <a sortno="8" href="#" title="抑制肿瘤">抑制肿瘤</a>
+                            <a sortno="9" href="#" title="改善睡眠">改善睡眠</a>
+                            <a sortno="10" href="#" title="心脏养护">心脏养护</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="青少年儿童">青少年儿童
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="增强免疫">增强免疫</a>
+                            <a sortno="2" href="#" title="发育增高">发育增高</a>
+                            <a sortno="2" href="#" title="补钙排铅">补钙排铅</a>
+                            <a sortno="3" href="#" title="补维生素">补维生素</a>
+                            <a sortno="5" href="#" title="健脑益智">健脑益智</a>
+                            <a sortno="6" href="#" title="改善睡眠">改善睡眠</a>
+                    </li>
+                <li class="last">
+                    <a class="bit2" href="#" target="_blank">查看更多
+                    	<label>
+                    		<i class="icons"></i>
+                    	</label>
+                    </a>&nbsp;
+                </li>
+            </ul>
+				<div class="rmpp"></div>
+			</div>
+			<div class="subcat clear" style="display: none;">
+				<ul class="sitems">
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="避孕用品">避孕用品
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="避孕套">避孕套</a>
+                            <a sortno="2" href="#" title="避孕药">避孕药</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="检测用品">检测用品
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="排卵检测">排卵检测</a>
+                            <a sortno="2" href="#" title="验孕检查">验孕检查</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="情趣用品">情趣用品
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="润滑剂">润滑剂</a>
+                            <a sortno="2" href="#" title="男用器具">男用器具</a>
+                            <a sortno="3" href="#" title="女用器具">女用器具</a>
+                    </li>
+                <li class="last">
+                    <a class="bit2" href="#" target="_blank">查看更多
+                    	<label>
+                    		<i class="icons"></i>
+                    	</label>
+                    </a>&nbsp;
+                </li>
+            </ul>
+				<div class="rmpp"></div>
+			</div>
+			<div class="subcat clear" style="display: none;">
+				<ul class="sitems">
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="名贵中药">名贵中药
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="2" href="#" title="冬虫夏草">冬虫夏草</a>
+                            <a sortno="3" href="#" title="高丽参">高丽参</a>
+                            <a sortno="5" href="#" title="红参">红参</a>
+                            <a sortno="6" href="#" title="鹿茸">鹿茸</a>
+                            <a sortno="7" href="#" title="白参">白参</a>
+                            <a sortno="8" href="#" title="灵芝">灵芝</a>
+                            <a sortno="9" href="#" title="燕窝">燕窝</a>
+                            <a sortno="15" href="#" title="雪莲">雪莲</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="中药材">中药材
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="枸杞">枸杞</a>
+                            <a sortno="2" href="#" title="胖大海">胖大海</a>
+                            <a sortno="3" href="#" title="当归">当归</a>
+                            <a sortno="4" href="#" title="天麻">天麻</a>
+                            <a sortno="5" href="#" title="三七">三七</a>
+                            <a sortno="6" href="#" title="红枣">红枣</a>
+                            <a sortno="8" href="#" title="决明子">决明子</a>
+                            <a sortno="9" href="#" title="百合">百合</a>
+                            <a sortno="11" href="#" title="红景天">红景天</a>
+                            <a sortno="12" href="#" title="黄芪">黄芪</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="中药粉末">中药粉末
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="润滑剂">润滑剂</a>
+                            <a sortno="2" href="#" title="男用器具">男用器具</a>
+                            <a sortno="3" href="#" title="女用器具">女用器具</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="茶">茶
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="减肥茶">减肥茶</a>
+                            <a sortno="2" href="#" title="降压茶">降压茶</a>
+                            <a sortno="3" href="#" title="降糖茶">降糖茶</a>
+                            <a sortno="4" href="#" title="苦丁茶">苦丁茶</a>
+                            <a sortno="4" href="#" title="通便茶">通便茶</a>
+                            <a sortno="7" href="#" title="花茶">花茶</a>
+                    </li>
+                <li class="last">
+                    <a class="bit2" href="#" target="_blank">查看更多
+                    	<label>
+                    		<i class="icons"></i>
+                    	</label>
+                    </a>&nbsp;
+                </li>
+            </ul>
+				<div class="rmpp"></div>
+			</div>
+			<div class="subcat clear" style="display: none;">
+				<ul class="sitems">
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="药妆">药妆
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="祛痘">祛痘</a>
+                            <a sortno="2" href="#" title="祛斑">祛斑</a>
+                            <a sortno="3" href="#" title="疤痕修复">疤痕修复</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="时尚彩妆">时尚彩妆
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="补水">补水</a>
+                            <a sortno="2" href="#" title="BB霜">BB霜</a>
+                            <a sortno="3" href="#" title="隔离霜">隔离霜</a>
+                            <a sortno="4" href="#" title="精华液">精华液</a>
+                            <a sortno="5" href="#" title="美白霜/乳液">美白霜/乳液</a>
+                            <a sortno="6" href="#" title="洁面乳">洁面乳</a>
+                            <a sortno="6" href="#" title="防晒霜">防晒霜</a>
+                    </li>
+                    <li>
+                        <a class="bit" href="#" target="_blank" title="身体护理">身体护理
+                        	<label>
+                        		<i class="icons"></i>
+                        	</label>
+                        </a>
+                            <a sortno="1" href="#" title="润肤">润肤</a>
+                            <a sortno="2" href="#" title="止痒">止痒</a>
+                            <a sortno="3" href="#" title="生发防脱">生发防脱</a>
+                            <a sortno="4" href="#" title="香体除臭">香体除臭</a>
+                            <a sortno="5" href="#" title="脱毛">脱毛</a>
+                    </li>
+                <li class="last">
+                    <a class="bit2" href="#" target="_blank">查看更多
+                    	<label>
+                    		<i class="icons"></i>
+                    	</label>
+                    </a>&nbsp;
+                </li>
+            </ul>
+				<div class="rmpp"></div>
+			</div>
+		</div>
+		<a href="#" target="_blank" title="商家入驻" class="nav_img" style="opacity: 0.9;">
+			<img src="img/nav_img.png"/>
+		</a>
+		<div class="special" style="opacity: 0.9;">
+			<a href="#"><img src="img/byzq.png"/></a>
+			<a href="#"><img src="img/lqzx.png"/></a>
+		</div>
+	</div>
+</nav>
+<section id="banner">
+	<div class="imgbox">
+        <a href="#"><img src="img/banner01.png"/></a>
+        <a href="#"><img src="img/banner02.jpg"/></a>
+        <a href="#"><img src="img/banner03.jpg"/></a>
+        <a href="#"><img src="img/banner04.png"/></a>
+        <a href="#"><img src="img/banner05.png"/></a>
+    </div>
+    <div class="btns">
+        <input type="button" id="left" value="" class="icons">
+        <input type="button" id="right" value="" class="icons">
+    </div>
+    <div class="list">
+        <span>新人专享</span>
+        <span>一件包邮</span>
+        <span>上海现代制药</span>
+        <span>下载app 新客领20元抵用券</span>
+        <span>领券中心</span>
+    </div>
+</section>
+<main>
+	<div class="margin">
+		<div class="xsg">
+			<h2>
+				<i class="icons_xs"></i>
+				<span class="title">限时购</span>
+			</h2>
+			<div class="cont">
+				<div class="item">
+					<a href="#" class="img">
+						<img src="img/xsg_1.jpg" alt="维生素C泡腾片"/>
+					</a>
+					<a href="#" class="name">维生素C泡腾片</a>
+					<p class="price"><em>￥</em>41.00</p>
+				</div>
+				<div class="item">
+					<a href="#" class="img">
+						<img src="img/xsg_2.jpg" alt="创可贴"/>
+					</a>
+					<a href="#" class="name">创可贴</a>
+					<p class="price"><em>￥</em>5.10</p>
+				</div>
+				<div class="item">
+					<a href="detail.html?_id=5c8cfc432cf4b64e9fe9662b&goods=健力多氨糖软骨素钙片" class="img" target="_blank">
+						<img src="img/xsg_3.jpg" alt="氨糖软骨素钙片"/>
+					</a>
+					<a href="#" class="name">氨糖软骨素钙片</a>
+					<p class="price"><em>￥</em>30.00</p>
+				</div>
+				<div class="item">
+					<a href="#" class="img">
+						<img src="img/xsg_4.jpg" alt="抗病毒口服液"/>
+					</a>
+					<a href="#" class="name">抗病毒口服液</a>
+					<p class="price"><em>￥</em>9.90</p>
+				</div>
+				<div class="item">
+					<a href="#" class="img">
+						<img src="img/xsg_5.jpg" alt="健胃消食片"/>
+					</a>
+					<a href="#" class="name">健胃消食片</a>
+					<p class="price"><em>￥</em>7.80</p>
+				</div>
+			</div>
+		</div>
+		<div class="mitem">
+			<div class="title clear" id="cZxyp">
+				<span class="floor">
+					<i class="l">1</i>
+					<i class="r">F</i>
+				</span>
+				<h2>中西药品</h2>
+				<div class="option">
+					<a href="#" title="中西药品 神经系统">神经系统
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中西药品 呼吸系统">呼吸系统
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中西药品 皮肤科病">皮肤科病
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中西药品 五官科病">五官科病
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中西药品 心脑血管">心脑血管
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中西药品 胃肠用药">胃肠用药
+						<i class="icons"></i>	
+					</a>
+					<b>|</b>
+					<a href="#" title="中西药品 家庭常用">家庭常用
+						<i class="icons"></i>
+					</a>
+				</div>
+			</div>
+			<div class="content clear">
+				<div class="cleft">
+					<div class="cdetail">
+						<div class="cdetail_img">
+							<a href="#"><img src="img/huiren.jpg"/></a>
+							<a href="#"><img src="img/donge.jpg"/></a>
+						</div>
+						<div class="cdetail_btn">
+							<input type="button" name="" id="left" value="" class="left icons"/>
+							<input type="button" name="" id="right" value="" class="right icons"/>
+						</div>
+						<ul class="company">
+							<li><a href="#"><img src="img/ynby.png"/></a></li>
+							<li><a href="#"><img src="img/rhjt.png"/></a></li>
+							<li><a href="#"><img src="img/sjyy.png"/></a></li>
+							<li><a href="#"><img src="img/bjtrt.png"/></a></li>
+							<li><a href="#"><img src="img/shyy.png"/></a></li>
+							<li><a href="#"><img src="img/byszy.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="cmain">
+					<ul class="drug clear">
+						<li>
+							<a href="detail.html?_id=5c8cfc3a2cf4b64e9fe9662a&goods=同仁堂清咽丸" target="_blank" class="img">
+								<img src="img/drug_1.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥20.00</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_2.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_3.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_4.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_5.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_6.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_7.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_8.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mitem">
+			<div class="title clear">
+				<span class="floor">
+					<i class="l">2</i>
+					<i class="r">F</i>
+				</span>
+				<h2>养生保健</h2>
+			</div>
+			<div class="content clear">
+				<div class="cleft">
+					<div class="cdetail">
+						<div class="cdetail_img">
+							<a href="#"><img src="img/xdq.jpg"/></a>
+							<a href="#"><img src="img/tcbj.jpg"/></a>
+						</div>
+						<div class="cdetail_btn">
+							<input type="button" name="" id="left" value="" class="left icons"/>
+							<input type="button" name="" id="right" value="" class="right icons"/>
+						</div>
+						<ul class="company">
+							<li><a href="#"><img src="img/floor2_c1.png"/></a></li>
+							<li><a href="#"><img src="img/floor2_c2.png"/></a></li>
+							<li><a href="#"><img src="img/floor2_c3.png"/></a></li>
+							<li><a href="#"><img src="img/floor2_c4.png"/></a></li>
+							<li><a href="#"><img src="img/floor2_c5.png"/></a></li>
+							<li><a href="#"><img src="img/floor2_c6.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="cmain">
+					<ul class="drug clear">
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_1.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_2.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_3.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_4.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_5.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_6.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_7.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_8.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mitem">
+			<div class="title clear">
+				<span class="floor">
+					<i class="l">3</i>
+					<i class="r">F</i>
+				</span>
+				<h2>医疗器材</h2>
+				<div class="option">
+					<a href="#" title="医疗器材 神经系统">外用贴膏
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="医疗器材 医疗用品">医疗用品
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="医疗器材 康复理疗">康复理疗
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="医疗器材 检测设备">检测设备
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="医疗器材 家庭常备">家庭常备
+						<i class="icons"></i>
+					</a>
+				</div>
+			</div>
+			<div class="content clear">
+				<div class="cleft">
+					<div class="cdetail">
+						<div class="cdetail_img">
+							<a href="#"><img src="img/oml.jpg"/></a>
+							<a href="#"><img src="img/wt.jpg"/></a>
+						</div>
+						<div class="cdetail_btn">
+							<input type="button" name="" id="left" value="" class="left icons"/>
+							<input type="button" name="" id="right" value="" class="right icons"/>
+						</div>
+						<ul class="company">
+							<li><a href="#"><img src="img/floor3_c1.png"/></a></li>
+							<li><a href="#"><img src="img/floor3_c2.png"/></a></li>
+							<li><a href="#"><img src="img/floor3_c3.png"/></a></li>
+							<li><a href="#"><img src="img/floor3_c4.png"/></a></li>
+							<li><a href="#"><img src="img/floor3_c5.png"/></a></li>
+							<li><a href="#"><img src="img/floor3_c6.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="cmain">
+					<ul class="drug clear">
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_1.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_2.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_3.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_4.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_5.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_6.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_7.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_8.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mitem">
+			<div class="title clear">
+				<span class="floor">
+					<i class="l">4</i>
+					<i class="r">F</i>
+				</span>
+				<h2>计生用品</h2>
+				<div class="option">
+					<a href="#" title="计生用品 检测用品">检测用品
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="计生用品 避孕用品">避孕用品
+						<i class="icons"></i>
+					</a>
+				</div>
+			</div>
+			<div class="content clear">
+				<div class="cleft">
+					<div class="cdetail">
+						<div class="cdetail_img">
+							<a href="#"><img src="img/jyt.jpg"/></a>
+							<a href="#"><img src="img/dls.jpg"/></a>
+						</div>
+						<div class="cdetail_btn">
+							<input type="button" name="" id="left" value="" class="left icons"/>
+							<input type="button" name="" id="right" value="" class="right icons"/>
+						</div>
+						<ul class="company">
+							<li><a href="#"><img src="img/floor4_c1.png"/></a></li>
+							<li><a href="#"><img src="img/floor4_c2.png"/></a></li>
+							<li><a href="#"><img src="img/floor4_c3.png"/></a></li>
+							<li><a href="#"><img src="img/floor4_c4.png"/></a></li>
+							<li><a href="#"><img src="img/floor4_c5.png"/></a></li>
+							<li><a href="#"><img src="img/floor4_c6.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="cmain">
+					<ul class="drug clear">
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_1.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_2.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_3.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_4.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_5.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_6.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_7.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_8.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mitem">
+			<div class="title clear">
+				<span class="floor">
+					<i class="l">5</i>
+					<i class="r">F</i>
+				</span>
+				<h2>中药饮品</h2>
+				<div class="option">
+					<a href="#" title="中药饮品 茶">茶
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中药饮品 中药粉末">中药粉末
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中药饮品 中药材">中药材
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="中药饮品 名贵中药">名贵中药
+						<i class="icons"></i>
+					</a>
+				</div>
+			</div>
+			<div class="content clear">
+				<div class="cleft">
+					<div class="cdetail">
+						<div class="cdetail_img">
+							<a href="#"><img src="img/kangmei.jpg"/></a>
+							<a href="#"><img src="img/kangmei_sqf.jpg"/></a>
+						</div>
+						<div class="cdetail_btn">
+							<input type="button" name="" id="left" value="" class="left icons"/>
+							<input type="button" name="" id="right" value="" class="right icons"/>
+						</div>
+						<ul class="company">
+							<li><a href="#"><img src="img/floor5_c1.png"/></a></li>
+							<li><a href="#"><img src="img/floor5_c2.png"/></a></li>
+							<li><a href="#"><img src="img/floor5_c3.png"/></a></li>
+							<li><a href="#"><img src="img/floor5_c4.png"/></a></li>
+							<li><a href="#"><img src="img/floor5_c5.png"/></a></li>
+							<li><a href="#"><img src="img/floor5_c6.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="cmain">
+					<ul class="drug clear">
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_1.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_2.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_3.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_4.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_5.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_6.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_7.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_8.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mitem">
+			<div class="title clear">
+				<span class="floor">
+					<i class="l">6</i>
+					<i class="r">F</i>
+				</span>
+				<h2>美容护肤</h2>
+				<div class="option">
+					<a href="#" title="美容护肤 身体护理">身体护理
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="美容护肤 时尚彩妆">时尚彩妆
+						<i class="icons"></i>
+					</a>
+					<b>|</b>
+					<a href="#" title="美容护肤 药妆">药妆
+						<i class="icons"></i>
+					</a>
+				</div>
+			</div>
+			<div class="content clear">
+				<div class="cleft">
+					<div class="cdetail">
+						<div class="cdetail_img">
+							<a href="#"><img src="img/pzh.jpg"/></a>
+							<a href="#"><img src="img/tf.jpg"/></a>
+						</div>
+						<div class="cdetail_btn">
+							<input type="button" name="" id="left" value="" class="left icons"/>
+							<input type="button" name="" id="right" value="" class="right icons"/>
+						</div>
+						<ul class="company">
+							<li><a href="#"><img src="img/floor6_c1.png"/></a></li>
+							<li><a href="#"><img src="img/floor6_c2.png"/></a></li>
+							<li><a href="#"><img src="img/floor6_c3.png"/></a></li>
+							<li><a href="#"><img src="img/floor6_c4.png"/></a></li>
+							<li><a href="#"><img src="img/floor6_c5.png"/></a></li>
+							<li><a href="#"><img src="img/floor6_c6.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="cmain">
+					<ul class="drug clear">
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_1.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: block;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_2.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: none;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_3.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: none;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_4.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: none;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_5.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: none;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_6.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: none;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_7.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: none;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+						<li>
+							<a href="#" class="img">
+								<img src="img/drug_8.jpg" alt="【永孜堂】胃肠灵胶囊"/>
+							</a>
+							<a href="#" class="txt" title="【永孜堂】胃肠灵胶囊">【永孜堂】胃肠灵胶囊</a>
+							<p class="sm">0.3gx12粒x2板/盒</p>
+							<p class="money">￥39.80</p>
+							<div class="gx" style="display: none;">
+								温中祛寒，健脾止泻。用于中焦虚寒，寒湿内盛，脘腹冷痛，
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<ul class="evevator">
+			<li>
+				<i class="icons"></i>
+				<span>中西药品</span>
+			</li>
+			<li>
+				<i class="icons"></i>
+				<span>养生保健</span>
+			</li>
+			<li>
+				<i class="icons"></i>
+				<span>医疗器材</span>
+			</li>
+			<li>
+				<i class="icons"></i>
+				<span>计生用品</span>
+			</li>
+			<li>
+				<i class="icons"></i>
+				<span>中药饮品</span>
+			</li>
+			<li>
+				<i class="icons"></i>
+				<span>美容护肤</span>
+			</li>
+		</ul>
+
+		<div class="unenough">
+			<div class="title">
+				<p class="txt">还没看够</p>
+				<span class="line_l"></span>
+				<span class="line_r"></span>
+			</div>
+			<div class="content">
+				<ul class="clear">
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_1.jpg"/ alt="【康王】复方酮康唑发用洗剂"></a>
+						<a href="#" class="cp_name">【康王】复方酮康唑发用洗剂</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_2.jpg"/ alt="【妈富隆】去氧孕烯炔雌醇片"></a>
+						<a href="#" class="cp_name">【妈富隆】去氧孕烯炔雌醇片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_3.jpg"/ alt="【和恩】恩替卡韦分散片"></a>
+						<a href="#" class="cp_name">【和恩】恩替卡韦分散片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_4.jpg"/ alt="益安宁丸"></a>
+						<a href="#" class="cp_name">益安宁丸</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_5.jpg"/ alt="【万通】万通筋骨贴"></a>
+						<a href="#" class="cp_name">【万通】万通筋骨贴</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_2.jpg"/ alt="【妈富隆】去氧孕烯炔雌醇片"></a>
+						<a href="#" class="cp_name">【妈富隆】去氧孕烯炔雌醇片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_3.jpg"/ alt="【和恩】恩替卡韦分散片"></a>
+						<a href="#" class="cp_name">【和恩】恩替卡韦分散片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_4.jpg"/ alt="益安宁丸"></a>
+						<a href="#" class="cp_name">益安宁丸</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_5.jpg"/ alt="【万通】万通筋骨贴"></a>
+						<a href="#" class="cp_name">【万通】万通筋骨贴</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_3.jpg"/ alt="【和恩】恩替卡韦分散片"></a>
+						<a href="#" class="cp_name">【和恩】恩替卡韦分散片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_4.jpg"/ alt="益安宁丸"></a>
+						<a href="#" class="cp_name">益安宁丸</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_5.jpg"/ alt="【万通】万通筋骨贴"></a>
+						<a href="#" class="cp_name">【万通】万通筋骨贴</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_4.jpg"/ alt="益安宁丸"></a>
+						<a href="#" class="cp_name">益安宁丸</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_1.jpg"/ alt="【康王】复方酮康唑发用洗剂"></a>
+						<a href="#" class="cp_name">【康王】复方酮康唑发用洗剂</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_2.jpg"/ alt="【妈富隆】去氧孕烯炔雌醇片"></a>
+						<a href="#" class="cp_name">【妈富隆】去氧孕烯炔雌醇片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_4.jpg"/ alt="益安宁丸"></a>
+						<a href="#" class="cp_name">益安宁丸</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_5.jpg"/ alt="【万通】万通筋骨贴"></a>
+						<a href="#" class="cp_name">【万通】万通筋骨贴</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_4.jpg"/ alt="益安宁丸"></a>
+						<a href="#" class="cp_name">益安宁丸</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_1.jpg"/ alt="【康王】复方酮康唑发用洗剂"></a>
+						<a href="#" class="cp_name">【康王】复方酮康唑发用洗剂</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_2.jpg"/ alt="【妈富隆】去氧孕烯炔雌醇片"></a>
+						<a href="#" class="cp_name">【妈富隆】去氧孕烯炔雌醇片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_3.jpg"/ alt="【和恩】恩替卡韦分散片"></a>
+						<a href="#" class="cp_name">【和恩】恩替卡韦分散片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_4.jpg"/ alt="益安宁丸"></a>
+						<a href="#" class="cp_name">益安宁丸</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_1.jpg"/ alt="【康王】复方酮康唑发用洗剂"></a>
+						<a href="#" class="cp_name">【康王】复方酮康唑发用洗剂</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_2.jpg"/ alt="【妈富隆】去氧孕烯炔雌醇片"></a>
+						<a href="#" class="cp_name">【妈富隆】去氧孕烯炔雌醇片</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+					<li>
+						<a href="#" class="cp_img"><img src="img/cp_5.jpg"/ alt="【万通】万通筋骨贴"></a>
+						<a href="#" class="cp_name">【万通】万通筋骨贴</a>
+						<span class="cp_price">￥2.90</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="adv">
+			<a href="#"><img src="img/ban_adv.png" alt="新人专享"/></a>
+		</div>
+		<div class="infor">
+			<div class="news">
+				<div class="top clear">
+					<h4>最新资讯</h4>
+					<a href="#">更多>></a>
+				</div>
+				<div class="first">
+					<a href="#" class="l"><img src="img/nophoto.png"/></a>
+					<div class="r">
+						<a href="#">
+							<b>【识药辨药】</b>
+							药品为什么分颗粒、胶囊和片状
+						</a>
+						<p>我们都知道，一旦得病了就得用药治疗。如果感冒了，有的人会吃颗粒的...</p>
+					</div>
+				</div>
+				<div class="next">
+					<ul>
+						<li>
+							<a href="#" title="剧烈运动之后要注意哪些事情">
+								<b>【运动减肥】</b>
+								剧烈运动之后要注意哪些事情
+							</a>
+						</li>
+						<li>
+							<a href="#" title="如何有效减肥，有效减肥的方法">
+								<b>【明星减肥】</b>
+								如何有效减肥，有效减肥的方法
+							</a>
+						</li>
+						<li>
+							<a href="#" title="维生素A、B、C、D、E，了解一下">
+								<b>【饮食误区】</b>
+								 维生素A、B、C、D、E，了解一下
+							</a>
+						</li>
+						<li>
+							<a href="#" title="荔枝病是什么，如何预防和治疗">
+								<b>【饮食误区】</b>
+								荔枝病是什么，如何预防和治疗
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="rank">
+				<div class="top clear">
+					<h4>阅读排行</h4>
+					<a href="#">更多>></a>
+				</div>
+				<div class="first">
+					<a href="#" class="l">
+						<i class="num">1</i>
+						<img src="img/nophoto.png"/>
+					</a>
+					<div class="r">
+						<a href="#">
+							<b>【药品导购】</b>
+							万通筋骨贴价格贵吗 10贴的多少钱一盒
+						</a>
+						<p>万通筋骨贴目前市面上有两种规格，一种是7cmX10cmX6贴/盒，另外...</p>
+					</div>
+				</div>
+				<div class="next">
+					<ul>
+						<li>
+							<a href="#" title="剧烈运动之后要注意哪些事情">
+								<i class="num">2</i>
+								<b>【关爱孕妇】</b>
+								 自然分娩全过程　顺产图片
+							</a>
+						</li>
+						<li>
+							<a href="#" title="如何有效减肥，有效减肥的方法">
+								<i class="num">3</i>
+								<b>【妇科】</b>
+								女性真人外阴实图 女性阴唇的作用
+							</a>
+						</li>
+						<li>
+							<a href="#" title="维生素A、B、C、D、E，了解一下">
+								<b>【男科】</b>
+								男性阴茎快速勃起的方法有哪些？四招方法让你的男票快速勃起
+							</a>
+						</li>
+						<li>
+							<a href="#" title="荔枝病是什么，如何预防和治疗">
+								<b>【呼吸系统】</b>
+								磷酸奥司他韦胶囊价格贵吗 10粒的多少钱一盒？
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="eva">
+				<div class="top clear">
+					<h4>最新评价</h4>
+					<a href="#">更多>></a>
+				</div>
+				<div class="container">
+					<ul id="roll" style="margin-top: 0px;">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="links">
+			<div class="nav_l">
+				<ul class="clear">
+					<li class="l"><a href="#" title="热门商品">热门商品</a></li>
+					<li class="r"><a href="#" title="友情链接">友情链接</a></li>
+				</ul>
+			</div>
+			<div class="hot_goods">
+				<ul class="clear">
+					<li><a href="#" title="胆乐胶囊">胆乐胶囊</a></li>
+					<li><a href="#" title="东泰">东泰</a></li>
+					<li><a href="#" title="芩芷鼻炎糖浆">芩芷鼻炎糖浆</a></li>
+					<li><a href="#" title="胡慶餘堂">胡慶餘堂</a></li>
+					<li><a href="#" title="神奇">神奇</a></li>
+					<li><a href="#" title="晶鑫">晶鑫</a></li>
+					<li><a href="#" title="姚氏">姚氏</a></li>
+					<li><a href="#" title="弘旭阳">弘旭阳</a></li>
+					<li><a href="#" title="健兴">健兴</a></li>
+					<li><a href="#" title="隴神">隴神</a></li>
+					<li><a href="#" title="通脉降脂片">通脉降脂片</a></li>
+					<li><a href="#" title="石榴日轮丸">石榴日轮丸</a></li>
+					<li><a href="#" title="银屑灵颗粒">银屑灵颗粒</a></li>
+					<li><a href="#" title="氯沙坦钾氢氯噻嗪片">氯沙坦钾氢氯噻嗪片</a></li>
+					<li><a href="#" title="复方丹蛭片">复方丹蛭片</a></li>
+					<li><a href="#" title="媛葆疗">媛葆疗</a></li>
+					<li><a href="#" title="东泰">东泰</a></li>
+					<li><a href="#" title="芩芷鼻炎糖浆">芩芷鼻炎糖浆</a></li>
+					<li><a href="#" title="胡慶餘堂">胡慶餘堂</a></li>
+					<li><a href="#" title="神奇">神奇</a></li>
+					<li><a href="#" title="晶鑫">晶鑫</a></li>
+					<li><a href="#" title="姚氏">姚氏</a></li>
+					<li><a href="#" title="弘旭阳">弘旭阳</a></li>
+				</ul>
+			</div>
+			<div class="friendlink" style="display: none;">
+				<ul class="clear">
+					<li><a href="#" title="药品大全">药品大全</a></li>
+					<li><a href="#" title="360好药">360好药</a></li>
+					<li><a href="#" title="中国卫生人才网">中国卫生人才网</a></li>
+					<li><a href="#" title="360好药">360好药</a></li>
+					<li><a href="#" title="中国卫生人才网">中国卫生人才网</a></li>
+					<li><a href="#" title="八百方网上药店">八百方网上药店</a></li>
+					<li><a href="#" title="百姓阳光大药房">百姓阳光大药房</a></li>
+					<li><a href="#" title="360好药">360好药</a></li>
+					<li><a href="#" title="中国卫生人才网">中国卫生人才网</a></li>
+					<li><a href="#" title="八百方网上药店">八百方网上药店</a></li>
+					<li><a href="#" title="百姓阳光大药房">百姓阳光大药房</a></li>
+					<li><a href="#" title="360好药">360好药</a></li>
+					<li><a href="#" title="360好药">360好药</a></li>
+					<li><a href="#" title="中国卫生人才网">中国卫生人才网</a></li>
+					<li><a href="#" title="八百方网上药店">八百方网上药店</a></li>
+					<li><a href="#" title="百姓阳光大药房">百姓阳光大药房</a></li>
+					<li><a href="#" title="360好药">360好药</a></li>
+					<li><a href="#" title="中国卫生人才网">中国卫生人才网</a></li>
+					<li><a href="#" title="八百方网上药店">八百方网上药店</a></li>
+					<li><a href="#" title="百姓阳光大药房">百姓阳光大药房</a></li>
+					<li><a href="#" title="360好药">360好药</a></li>
+					<li><a href="#" title="中国卫生人才网">中国卫生人才网</a></li>
+					<li><a href="#" title="八百方网上药店">八百方网上药店</a></li>
+					<li><a href="#" title="百姓阳光大药房">百姓阳光大药房</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</main>
+<footer>
+		<div class="navigation">
+			<div class="container clear">
+				<dl>
+					<dt><a href="#">消费者保障</a></dt>
+					<dd><a href="#">网警提示</a></dd>
+					<dd><a href="#">隐私保护</a></dd>
+					<dd><a href="#">投诉维权</a></dd>
+					<dd><a href="#">客服中心</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">消费者保障</a></dt>
+					<dd><a href="#">网警提示</a></dd>
+					<dd><a href="#">隐私保护</a></dd>
+					<dd><a href="#">投诉维权</a></dd>
+					<dd><a href="#">客服中心</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">消费者保障</a></dt>
+					<dd><a href="#">网警提示</a></dd>
+					<dd><a href="#">隐私保护</a></dd>
+					<dd><a href="#">投诉维权</a></dd>
+					<dd><a href="#">客服中心</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">消费者保障</a></dt>
+					<dd><a href="#">网警提示</a></dd>
+					<dd><a href="#">隐私保护</a></dd>
+					<dd><a href="#">投诉维权</a></dd>
+					<dd><a href="#">客服中心</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">消费者保障</a></dt>
+					<dd><a href="#">网警提示</a></dd>
+					<dd><a href="#">隐私保护</a></dd>
+					<dd><a href="#">投诉维权</a></dd>
+					<dd><a href="#">客服中心</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">消费者保障</a></dt>
+					<dd><a href="#">网警提示</a></dd>
+					<dd><a href="#">隐私保护</a></dd>
+					<dd><a href="#">投诉维权</a></dd>
+					<dd><a href="#">客服中心</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="#">手机app</a></dt>
+					<dd><a href="#"><img src="img/phone.png"/></a><br><br>新人领二十元红包</dd>
+				</dl>
+				<dl>
+					<dt><a href="#">关注微信</a></dt>
+					<dd><a href="#"><img src="img/phone.png"/></a><br><br>每日签到领积分</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="about">
+			<div class="container">
+				<p class="p1">
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+				</p>
+				<p class="p2">
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+					<span>|</span>
+					<a href="#">关于我们</a>
+				</p>
+				<p class="p3">
+					<span>互联网药品信息服务资格证编号：</span>
+					<span>互联网药品信息服务资格证编号：</span>
+					<span>互联网药品信息服务资格证编号：</span>
+					<span>互联网药品信息服务资格证编号：</span>
+					<span>互联网药品信息服务资格证编号：</span>
+				</p>
+				<p class="p4">©2007-2019 药房网商城版权所有 上海伊邦医药信息科技有限公司</p>
+				<p class="p5 clear">
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+					<span class="icons_rz"></span>
+				</p>
+				<p class="p6">本网站用字经北京北大方正电子有限公司授权许可</p>
+			</div>
+		</div>
+</footer>
+<section id="sideNav">
+	<ul class="nav">
+		<li>
+			<i class="icons""></i>
+			<a href="javascript:void(0);" style="display: none;">联系客服</a>
+		</li>
+		<li>
+			<i class="icons"></i>
+			<a href="javascript:void(0);" style="display: none;">购物清单</a>
+		</li>
+		<li>
+			<i class="icons"></i>
+			<a href="javascript:void(0);" style="display: none;">同店购买</a>
+		</li>
+		<li>
+			<i class="icons"></i>
+			<a href="javascript:void(0);" style="display: none;">关注我们</a>
+		</li>
+		<li>
+			<i class="icons"></i>
+			<a href="javascript:void(0);" style="display: none;">手机APP</a>
+		</li>
+		<li>
+			<i class="icons"></i>
+			<a href="javascript:void(0);" style="display: none;">意见反馈</a>
+		</li>
+		<li class="last">
+			<i class="icons"></i>
+			<a href="javascript:void(0);" style="display: none;">返回顶层</a>
+		</li>
+	</ul>
+</section>
+</body>
+<script src="libs/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="libs/jquery.banner.1.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/cookie.js"></script>
+<script type="text/javascript">
+//  登录注销状态
+	function Logout(options){
+		this.login = options.login;
+		this.logout = options.logout;
+		this.uName = options.uName;
+		this.url = options.url;
+		this.urlName = options.urlName;
+    	this.init();
+	}
+	Logout.prototype.init = function(){
+		var that = this;
+		if(this.urlName.indexOf('?') != -1){
+			var str = this.urlName.substr(1);
+			var strs = str.split('=')[1];
+			this.uName.innerHTML = strs;
+			this.logout.innerHTML = '[退出]';
+		}
+		this.logout.onclick = function(){
+			that.load();
+		}
+	};
+	Logout.prototype.load = function(){
+		var that = this;
+		$.ajax({
+			type: "GET",
+			url: that.url,
+			// data: {},
+			// dataType: "json",
+			success: function(res){
+				location.href = "login.html";
+			}
+		});
+	}
+	new Logout({
+		login:document.querySelector(".login"),
+		logout:document.querySelector(".logout"),
+		uName:document.querySelector(".uName"),
+		url:"/api/logout",
+		urlName:location.search
+	})
+//	搜索框
+	$(".opt_list").children("li").hover(function(){
+		$(this).parent().children().css({display:"block"});
+		$(".opt_list").css({"border-bottom":"1px solid #e5e5e5"})
+	},function(){
+		$(this).parent().children("li").not(".current").stop().hide();
+		$(".opt_list").css({"border-bottom":0})
+	})
+//	$("input[type=text]").focus(function(){
+//		
+//	})
+	
+//	三级导航
+	$(".maingoods").children("li").hover(function(){
+		$(this).css({background:"#f4f4f4"})
+		.siblings("li").css({background:"none"})
+		.parent().siblings(".subcat").eq($(this).index()).stop().show()
+		.siblings(".subcat").stop().hide();
+	},function(){
+		$(this).parent().siblings(".subcat").stop().hide();
+		$(this).css({background:"none"})
+		.parent().siblings(".subcat").eq($(this).index()).hover(function(){
+			$(this).stop().show()
+		},function(){
+			$(this).stop().hide()
+		})
+	})
+//	轮播图
+	$("#banner").banner({
+		items:$("#banner").children(".imgbox").children("a"),
+		left:$("#banner").children(".btns").children("#left"),
+		right:$("#banner").children(".btns").children("#right"),
+		list:$("#banner").children(".list").children("span"),
+		moveTime:300,
+		autoPlay:true,
+		delayTime:2000,
+	});
+//	侧边栏
+	$("#sideNav").children(".nav").children("li").hover(function(){
+		$(this).children("a").css({display:"block"}).siblings("i").css({display:"none"})
+		.parent().css({background:"#0cb95f"}).siblings().children("a").css({display:"none"}).siblings("i").css({display:"block"})
+		.parent().css({background:""})
+	},function(){
+		$(this).children("a").css({display:"none"}).siblings("i").css({display:"block"})
+		.parent().css({background:""})
+	})
+//	返回顶部
+	$("#sideNav").children(".nav").children(".last").children("a").click(function(){
+		$("html").stop().animate({scrollTop:0})
+	})
+//	楼梯
+	$(function(){
+            $(".evevator").children("li").click(function(){
+                $("html").stop().animate({
+                    scrollTop:$(".mitem").eq($(this).index()).offset().top
+                })
+            })
+            $(".evevator").children("li").hover(function(){
+            	$(this).css({background:"#0cb95f"}).children("span").css({color:"#fff"})
+            	.siblings("i").css({"background-position-y":"-396px"})
+            	.parent().siblings("li").css({background:"#fff"}).children("span").css({color:"#999"})
+            	.siblings("i").css({"background-position-y":"-371px"})
+            },function(){
+            	$(this).css({background:"#fff"}).children("span").css({color:"#999"})
+            	.siblings("i").css({"background-position-y":"-371px"})
+            })
+	   });
+
+
+</script>
+</html>
